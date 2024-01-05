@@ -1,4 +1,7 @@
-﻿##############################################################
+﻿# Remove wallpaper for RDP
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" -Name "fNoRemoteDesktopWallpaper" -Value "1" -PropertyType DWORD -Force
+
+##############################################################
 #  Run the Virtual Desktop Optimization Tool (VDOT)
 ##############################################################
 # https://github.com/The-Virtual-Desktop-Team/Virtual-Desktop-Optimization-Tool
